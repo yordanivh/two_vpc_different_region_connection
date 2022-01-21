@@ -148,6 +148,9 @@ resource "aws_vpc_peering_connection_accepter" "peer" {
 } */
   
 resource "null_resource" "test" {
+  triggers={
+  uuid=uuid()
+  }
   provisioner "local-exec" {
     command = "env | grep AWS"
   }
