@@ -1,4 +1,4 @@
-provider "aws" {
+/* provider "aws" {
   region = "us-east-1"
 }
 
@@ -145,5 +145,10 @@ resource "aws_vpc_peering_connection_accepter" "peer" {
   tags = {
     Side = "Accepter"
   }
+} */
+  
+resource "null_resource" "test" {
+  provisioner "local-exec" {
+    command = "env | grep AWS"
+  }
 }
-
