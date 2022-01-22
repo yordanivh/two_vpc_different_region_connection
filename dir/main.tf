@@ -155,3 +155,7 @@ resource "null_resource" "test" {
     command = "env | grep AWS"
   }
 }
+
+variable "AWS_ACCESS_KEY_ID" {
+  type = string 
+}
