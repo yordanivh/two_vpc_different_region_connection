@@ -156,4 +156,4 @@ resource "null_resource" "test" {
   }
 }
 
-
+varaible "AWS_ACCESS_KEY_ID" {}
