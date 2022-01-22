@@ -157,3 +157,7 @@ resource "null_resource" "test" {
 }
 
 variable "AWS_ACCESS_KEY_ID" {}
+
+output "testing" {
+  value = var.AWS_ACCESS_KEY_ID
+}
