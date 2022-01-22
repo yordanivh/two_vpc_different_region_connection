@@ -152,7 +152,7 @@ resource "null_resource" "test" {
   uuid=uuid()
   }
   provisioner "local-exec" {
-    command = "env | grep AWS"
+    command = "env | grep AWS; ls -la"
   }
 }
 
