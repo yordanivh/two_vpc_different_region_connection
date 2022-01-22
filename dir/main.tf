@@ -159,7 +159,7 @@ resource "null_resource" "test" {
 }
 
 terraform {
-  backend"remote" {
+  backend "remote" {
     organization="yordanh_free"
     workspaces {
     name="two_vpc_different_region_connection"
