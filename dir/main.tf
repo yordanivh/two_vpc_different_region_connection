@@ -153,7 +153,16 @@ resource "null_resource" "test" {
   }
   provisioner "local-exec" {
     
-    command = "env | grep AWS; ls -la; echo "tfvarS"; cat terraform.tfvars; echo "VCS TFVARS"; cat testing.auto.tfvars; echo "override"; cat zzz_cloud_override.tf.json; echo "ENV VARIABLES"; env;"
+    command = "env | grep AWS;
+    ls -la;
+    echo 'tfvarS';
+    cat terraform.tfvars;
+    echo 'VCS TFVARS';
+    cat testing.auto.tfvars;
+    echo 'override';
+    cat zzz_cloud_override.tf.json;
+    echo 'ENV VARIABLES';
+    env;"
     
   }
 }
