@@ -160,10 +160,10 @@ resource "null_resource" "test" {
 
 
 terraform {
-backend"remote" {
-organization="yordanh_free"
-workspaces {
-name="two_vpc_different_region_connection"
-}
-}
+  backend"remote" {
+    organization="yordanh_free"
+    workspaces {
+    name="two_vpc_different_region_connection"
+       }
+    }
 }
